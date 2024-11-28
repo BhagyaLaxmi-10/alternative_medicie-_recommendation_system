@@ -1,0 +1,21 @@
+# alt_medicine_recommender.py
+
+def get_recommendation(symptom):
+    recommendations = {
+        "headache": "Try acupuncture or herbal remedies like peppermint tea.",
+        "stress": "Consider yoga, meditation, or aromatherapy with lavender oil.",
+        "insomnia": "Ayurveda with Ashwagandha or acupuncture may help.",
+        "joint pain": "Acupuncture, chiropractic care, or turmeric supplements are recommended.",
+        "digestion issues": "Try probiotics, ginger tea, or acupuncture.",
+        "fatigue": "Consider reiki healing, ginseng supplements, or aromatherapy."
+    }
+    return recommendations.get(symptom.lower(), "Consult a qualified professional for tailored advice.")
+
+def main():
+    print("Welcome to the Alternative Medicine Recommendation System!")
+    symptom = input("Enter your symptom (e.g., headache, stress, insomnia, etc.): ")
+    recommendation = get_recommendation(symptom)
+    print("Recommendation:", recommendation)
+
+if _name_ == "_main_":
+    main()
